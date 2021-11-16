@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+  //◯◯ の秋
+
+  // function getAutumn(s) { 
+  //   const str = s;
+
+  //   if (str.endsWith('noaki')){
+  //     return str.slice(0, -5);
+  //   } else {
+  //     return str;
+  //   }
+
+  // };
+
+  //   console.log(getAutumn("codenoaki")); // code
+  //   console.log(getAutumn("dokusyo")); // dokusyo
+  //   console.log(getAutumn("javascriptnoaki")); // javascript
+
+
+  //台風の間隔
+
+// function getInterval(s) {
+//   const strArray = s.split(' ');
+//   const numArray = strArray.map(Number);
+//   const dayArray = [];
+//   for(let i = 0; i < numArray.length - 1 ; i++){
+//     dayArray.push(numArray[i+1] - numArray[i]);
+//   }
+//   return dayArray.join(' ');
+// }
+
+// console.log(getInterval("5 8 19 25 31")); // 3 11 6 6
+// console.log(getInterval("2 3 7 9 28")); // 1 4 2 19
+
+
+    //不思議なタマゴ
+
+    // function getNumberOfSteps(s) { 
+    //   const strArray = s.split(' ');
+    //   const numArray = strArray.map(Number);     
+    //   return Math.max(...numArray); 
+    // }
+
+    //   console.log(getNumberOfSteps("1 2 5")); // 5
+    //   console.log(getNumberOfSteps("2 5 5")); // 5
+    //   console.log(getNumberOfSteps("1 2 1")); // 2
+
+
+    //通知票
+
+    // function convertNumberToAlphabet(s) { 
+    //   const resultArray = s.split('');
+    //   const changeArray = resultArray.map((x) => {
+
+    //       switch (x) {
+    //         case '5':
+    //         return 'A';
+    //         break;
+
+    //         case '4':
+    //         return 'B';
+    //         break;
+
+    //         case '3':
+    //         return 'C';
+    //         break;
+
+    //         case '2':
+    //         return 'D';
+    //         break;
+
+    //         case '1':
+    //         return 'E';
+    //         break;
+    //       }
+          
+    //     });
+    //     return changeArray.join('');
+    //   }
+
+    //   console.log(convertNumberToAlphabet("53342")); // ACCBD
+    //   console.log(convertNumberToAlphabet("22222")); // DDDDD
+    //   console.log(convertNumberToAlphabet("51111")); // AEEEE
+
+
+      // function convertNumberToAlphabet(s) {
+      //   const resultArray = s.split('');
+      //   const changeArray = resultArray.map((x) => {
+
+      //     if (x === '5'){
+      //       return 'A'
+      //     } else if (x === '4') {
+      //       return 'B';
+      //     } else if (x === '3'){
+      //       return 'C';
+      //     } else if (x === '2'){
+      //       return 'D';
+      //     } else {
+      //       return 'E';
+      //     }
+      //   })
+      //   return changeArray.join('');
+
+      // };
+
+      // console.log(convertNumberToAlphabet("53342")); // ACCBD
+      // console.log(convertNumberToAlphabet("22222")); // DDDDD
+      // console.log(convertNumberToAlphabet("51111")); // AEEEE
+
+  //はじめまして
+  
+    // function greet(s1, s2) { 
+    //   let name = s1;
+    //   let gender = s2;
+
+    //   if ( gender === 'M' ){
+    //     return `Hi, Mr.${name}`
+    //   } else {
+    //     return `Hi, Ms.${name}`
+    //   }
+    // }
+
+    // console.log(greet("Stroheim", "M")); // Hi, Mr.Stroheim
+    // console.log(greet("Trish", "F")); // Hi, Ms.Trish
+
+
+  //天気の表示
+
+  // function showWeather(n) { 
+
+  //   if (n >= 71) {
+  //     return 'rainy';
+  //   } else if (n >= 31){
+  //     return 'cloudy'
+  //   } else {
+  //     return 'sunny'
+  //   }
+  // }
+
+  //   console.log(showWeather(31)); // cloudy
+  //   console.log(showWeather(2)); // sunny
+  //   console.log(showWeather(71)); // rainy
+
+
+  //正三角形かどうか
+
+  // function isEquilateralTriangle(s) {
+  //   const numArray = s.split(' ');
+  //   if (numArray[0] === numArray[1] && numArray[0] === numArray[2] ){
+  //     return 'Yes';
+  //   }else {
+  //     return 'No';
+  //   }
+  // }
+
+  //   console.log(isEquilateralTriangle("10 10 10")); // yes
+  //   console.log(isEquilateralTriangle("3 4 5")); // No
+
+
+  //連休の天気
+
+    // function daysOfGoOut(s) {
+    //   const numArray = s.split(' ');
+    //   const goout = [];
+
+    //   numArray.forEach(x => {
+    //     if ( x <= 30){
+    //       goout.push(x);
+    //     }
+    //   });
+    //   return goout.length;
+    // }
+
+    //   console.log(daysOfGoOut("13 0 15 30 89 100 30")); // 5
+    //   console.log(daysOfGoOut("0 14 18 22 0 2 4")); // 7
+    //   console.log(daysOfGoOut("99 99 99 99 99 99 99")); // 0
+
+
+  //試合の回数
+    // function calculateNumberOfGames(n) { 
+    //   return n * (n - 1) / 2;
+    // }
+
+    //   console.log(calculateNumberOfGames(4)); // 6
+    //   console.log(calculateNumberOfGames(10)); // 45
+
+
+  //本棚選び
+
+    // function canStoreBooks(s) { 
+    //   const numArray = s.split(' ');
+    //   let n = numArray[0];
+    //   let d = numArray[1];
+    //   let e = numArray[2];
+
+    //   let i = d * e;
+    //   if (n > i ){
+    //     return 'NG';
+    //   } else {
+    //     return 'OK';
+    //   }
+      
+    // }
+
+    //   console.log(canStoreBooks("400 5 85")); // OK
+    //   console.log(canStoreBooks("500 4 70")); // NG
+
+  </script>  
+</body>
+</html>
