@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+//予算オーバー
+
+  // function canTakeThis(arr) {    
+  //   let totalPrice = 0;
+  //   for(let i = 0;i < arr.length; i++){
+  //     totalPrice += arr[i].price * arr[i].count;      
+  //   }
+  //   return (totalPrice <= 114514);
+  // }
+
+  // const tarosCart = [
+  //   {
+  //     id: 8,
+  //     name: "Yoich",
+  //     price: 5800,
+  //     count: 2,
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "Yamasaki30",
+  //     price: 3000000,
+  //     count: 1,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Chita",
+  //     price: 3600,
+  //     count: 1,
+  //   },
+  // ];
+
+  // console.log(canTakeThis(tarosCart)); // false
+
+  // const hanakosCart = [
+  //   {
+  //     id: 10,
+  //     name: "ひまわり",
+  //     price: 280,
+  //     count: 3,
+  //   },
+  //   {
+  //     id: 112,
+  //     name: "かすみ草",
+  //     price: 220,
+  //     count: 2,
+  //   },
+  //   {
+  //     id: 40,
+  //     name: "ガーベラ",
+  //     price: 110,
+  //     count: 5,
+  //   },
+  // ];
+  // console.log(canTakeThis(hanakosCart)); // true
+
+
+
+
+//メール一斉送信
+
+  // function filterUnder25Array(array) { 
+
+  //   const output = [];
+  //   const array2 = array.filter(function (e) { return (e.age <= 25); });
+
+  //   array2.forEach((x) =>{
+  //     output.push(x.id);
+  //   });
+
+  //   return output;
+  // }
+
+  // const objectArray5 = [
+  //   {
+  //     id: 8,
+  //     name: "Emily",
+  //     age: 29,
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "John",
+  //     age: 22,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Bob",
+  //     age: 30,
+  //   },
+  // ];
+
+  // console.log(filterUnder25Array(objectArray5)); // [1]
+
+  // const objectArray6 = [
+  //   {
+  //     id: 10,
+  //     name: "taro",
+  //     age: 29,
+  //   },
+  //   {
+  //     id: 112,
+  //     name: "hanako",
+  //     age: 22,
+  //   },
+  //   {
+  //     id: 40,
+  //     name: "pochi",
+  //     age: 3,
+  //   },
+  // ];
+
+  // console.log(filterUnder25Array(objectArray6)); // [112, 40]
+
+
+
+//名前しかいらん
+
+  // function createNameArray(array) { 
+  //   const output = [];
+
+  //   let list = array.sort(function (a, b) {
+  //     return (a.age < b.age) ? -1 : 1;  //オブジェクトの昇順ソート
+  //   });
+
+  //   list.forEach(x => {
+  //     output.push(`${x.name}`)
+  //   });
+  //   return output;
+  // }
+  
+
+  // const objectArray3 = [
+  //   {
+  //     id: 8,
+  //     name: "Emily",
+  //     age: 29,
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "John",
+  //     age: 22,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Bob",
+  //     age: 30,
+  //   },
+  // ];
+
+  // console.log(createNameArray(objectArray3)); // ["John", "Emily", "Bob"]
+
+  // const objectArray4 = [
+  //   {
+  //     id: 10,
+  //     name: "taro",
+  //     age: 29,
+  //   },
+  //   {
+  //     id: 112,
+  //     name: "hanako",
+  //     age: 22,
+  //   },
+  //   {
+  //     id: 40,
+  //     name: "pochi",
+  //     age: 3,
+  //   },
+  // ];
+  // console.log(createNameArray(objectArray4)); // ["pochi", "hanako", "taro"]
+
+
+//オブジェクトの並び替え
+
+//   function sortObject(obj) {
+//     const output =[];
+
+//     let list = obj.sort(function (a, b) {
+//       return (a.id < b.id) ? -1 : 1;  //オブジェクトの昇順ソート
+//     });
+    
+//     list.forEach(x => {
+//       output.push(`${x.id}:${x.name}(${x.age})`)
+//     });
+//     return output.join(",");
+//   }
+// // 1:John(22),4:Bob(30),8:Emily(29)
+//   const objectArray1 = [
+//     {
+//       id: 8,
+//       name: "Emily",
+//       age: 29,
+//     },
+//     {
+//       id: 1,
+//       name: "John",
+//       age: 22,
+//     },
+//     {
+//       id: 4,
+//       name: "Bob",
+//       age: 30,
+//     },
+//   ];
+
+//   console.log(sortObject(objectArray1)); // 1:John(22),4:Bob(30),8:Emily(29)
+
+//   const objectArray2 = [
+//     {
+//       id: 10,
+//       name: "taro",
+//       age: 29,
+//     },
+//     {
+//       id: 112,
+//       name: "hanako",
+//       age: 22,
+//     },
+//     {
+//       id: 40,
+//       name: "pochi",
+//       age: 3,
+//     },
+//   ];
+
+//   console.log(sortObject(objectArray2)); // 10:taro(29),40:pochi(3),112:hanako(22)
+
+
+//ランダムに挨拶
+
+  // function randomGreet(a, b, c) { 
+
+  //   const greet =[a,b,c,];
+  //   return greet[Math.floor(Math.random() * greet.length)];
+
+  // }
+
+  // console.log(randomGreet("おはよう", "こんにちは", "こんばんは")); // おはようorこんにちはorこんばんは
+  // console.log(randomGreet("Hi!", "Hello!", "Bye!")); // Hi! or Hello! or Bye!
+
+//アンケートデータの作成
+
+  // function createObject(a, b) { 
+
+  //   let answer = {name:a,age:b,};
+  //   return answer;
+    
+  // }
+
+  // console.log(createObject("ichiro", 20)); // { name: "ichiro", age: 20, }
+  // console.log(createObject("momoko", 22)); // { name: "momoko", age: 22, }
+
+
+//特定の文字列を含むか
+
+  // function containStrings(str1, str2) {
+  //   return str1.includes(str2);
+  // }
+
+  // const a = "あけましておめでとうございます";
+  // const b = "おめでとう";
+
+  // console.log(containStrings(a, b)); // true
+
+  // const c = "Love the life you live. Live the life you love.";
+  // const d = "best";
+
+  // console.log(containStrings(c, d)); // false
+
+
+//成績を晒す
+  // function createBadScoreArray(a) { 
+  //   const score  = a.split(' ');
+  //   const result = score.map(Number);
+
+  //   function compareFunc(a, b) {
+  //     return a - b;
+  //   }
+
+  //   result.sort(compareFunc);
+  //   return result.join(' ');
+
+  // }
+
+  // console.log(createBadScoreArray("15 8 9 100 26 1")); // 1 8 9 15 26 100
+  // console.log(createBadScoreArray("50 15 89 5 61 2 44")); // 2 5 15 44 50 61 89
+
+
+//お買い物リスト
+
+  // function combineArray(a, b) {
+  //   let c = a.concat(b);
+  //   return c ;
+  // }
+
+  // const abc = ["a", "b", "c"];
+  // const def = ["d", "e", "f"];
+
+  // console.log(combineArray(abc, def)); //["a", "b", "c", "d", "e", "f"]
+
+  // const gen = ["米", "トイレットペーパー", "ちゅーる", "酒"];
+  // const yui = ["洗剤", "肉", "ブロッコリー"];
+
+  // console.log(combineArray(gen, yui)); // ["米", "トイレットペーパー", "ちゅーる", "酒", "洗剤", "肉", "ブロッコリー"]
+
+
+//プロフィールの表示
+
+  // function outputProfile(obj) { 
+
+  //   if (obj.name === undefined || obj.age === undefined || obj.gender === undefined) {
+  //     return "情報がありません";
+  //   } else if( obj.gender === "male") {
+  //     return `彼の名前は${obj.name}で${obj.age}歳です`
+  //   } else {
+  //     return `彼女の名前は${obj.name}で${obj.age}歳です`
+  //   }
+  // }
+
+  // const taro = {
+  //   name: "Taro",
+  //   age: 25,
+  //   gender: "male",
+  // };
+
+  // console.log(outputProfile(taro)); //彼の名前はTaroで25歳です
+
+  // const hanako = {
+  //   name: "Hanako",
+  //   age: 30,
+  //   gender: "female",
+  // };
+
+  // console.log(outputProfile(hanako)); // 彼女の名前はHanakoで30歳です
+
+  // const hatena = {
+  //   name: "hatena",
+  //   age: 20,
+  // };
+
+  // console.log(outputProfile(hatena)); //  情報がありません
+
+  </script> 
+</body>
+</html>

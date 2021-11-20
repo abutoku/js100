@@ -7,18 +7,228 @@
   <title>Document</title>
 </head>
 <body>
+
+  <!-- jquery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <script>
 
-  //お月見だんご
-    // function getNumberOfDango(s) { 
+//リストラ計画
 
+  // function fireEmployees(employees, fireEmployees) { 
+  //   let em = employees.split(' ');
+  //   let fire = fireEmployees.split(' ');
+
+  //   for(let i = 0; i < fire.length; i++ ){
+  //     let ind = em.indexOf(fire[i]);
+  //     em.splice(ind,1);
+  //   }
+  //   return em.join(' ');
+  // }
+
+  // console.log(
+  //   fireEmployees(
+  //     "Jotaro Joseph Avdol Polnareff Tenmei Iggy",
+  //     "Avdol Tenmei Iggy"
+  //   )
+  // ); // Jotaro Joseph Polnareff
+  // console.log(
+  //   fireEmployees(
+  //     "Giorno Bucciarati Abbacchio Mista Narancia Fugo Trish",
+  //     "Bucciarati Abbacchio Narancia"
+  //   )
+  // ); // Giorno Mista Fugo Trish
+  // console.log(
+  //   fireEmployees(
+  //     "Jolyne Ermes Emporio F・F Weather Anasui",
+  //     "Jolyne Ermes F・F Weather Anasui"
+  //   )
+  // ); // Emporio
+
+
+//しかたないから全角にしてやるか
+
+  // function convertToUppercase(s) { 
+
+  //   function zenkaku2Hankaku(str) {
+  //     return str.replace(/[A-Za-z0-9]/g, function (s) {
+  //       return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
+  //     });
+  //   }
+
+  //   return zenkaku2Hankaku(s);
+  // }
+
+  // console.log(convertToUppercase("1234567")); // １２３４５６７
+  // console.log(convertToUppercase("1111111")); // １１１１１１１
+  // console.log(convertToUppercase("1145140")); // １１４５１４０
+
+
+//調理計画
+
+  // function getStartTimeForCook(s, t) {
+  //   const timeArray = s.split(':');
+  //   const nowTimeArray = timeArray.map(Number);
+  //   console.log(nowTimeArray);
+
+  //   let hour = Math.floor( t / 60);
+  //   let minute = t - hour * 60;
+    
+  //   if (nowTimeArray[1] > minute){
+  //     hour = String(nowTimeArray[0] - hour);
+  //     minute = String(nowTimeArray[1] - minute);
+  //     hour = hour.padStart(2, '0');
+  //     minute = minute.padStart(2,'0');
+  //     return `${hour}:${minute}`;
+
+  //   } else {
+  //     hour = String(nowTimeArray[0] - hour -1);
+  //     minute = String(60 - minute);
+      
+  //     hour = hour.padStart(2, '0');
+  //     minute = minute.padStart(2, '0');
+  //     return `${hour}:${minute}`;
+  //   }
+    
+  // }
+
+  // console.log(getStartTimeForCook("19:00", 90)); // 17:30
+  // console.log(getStartTimeForCook("20:00", 20)); // 19:40
+  // console.log(getStartTimeForCook("20:30", 80)); // 19:10
+
+
+
+
+//ガチャ期待値計算
+
+  // function probabilityGetSSR(n, t) {
+  //   let probability = n/100;
+  //   let count = t;
+
+  //   //「1 － (1 － 当選確率) ^ 回数」
+
+  //   let result = 1- (1 - probability ) ** count;
+  //   return Math.round(result * 100);
+
+  // }
+
+  // console.log(probabilityGetSSR(1, 100)); // 63
+  // console.log(probabilityGetSSR(1.5, 70)); // 65
+  // console.log(probabilityGetSSR(1, 200)); // 87
+
+
+//ワインのキャッチコピー
+
+  // function bestCopy(s) { 
+  //   let str = s;
+  //   return `Best in ${str}`
+  // }
+
+  //   console.log(bestCopy("a decade")); // Best in a decade
+  //   console.log(bestCopy("the world")); // Best in the world
+  //   console.log(bestCopy("history ever")); // Best in history ever
+
+
+//11 / 11
+
+  // function canParty(s) { 
+  //   let str = s;
+    
+  //   if(str.length >= 11){
+  //     return 'OK';
+  //   } else {
+  //     return 11 - str.length;
+  //   }
+    
+  // }
+
+  // console.log(canParty("11111111111")); // OK
+  // console.log(canParty("1111")); // 7
+  // console.log(canParty("1111111111111111")); // OK
+
+
+//トリック・オア・トリート
+
+  // function candyOrChocolate(s) { 
+  //   let str = s;
+    
+  //   if (str.includes('chocolate')) {
+  //     return 'Thanks!';
+  //   } else if (str.includes('candy')) {
+  //     return 'Thanks!';
+  //   } else {
+  //     return 'No!';
+  //   }
+
+  // }
+
+  // console.log(candyOrChocolate("chocolate")); // Thanks!
+  // console.log(candyOrChocolate("candy")); // Thanks!
+  // console.log(candyOrChocolate("pannacotta")); // No!
+
+
+//ピラミッドの作り方
+
+  // function getNumberOfHuman(n) {
+
+  //   let num = 0;
+  //   for(let i = 0; i < n+1 ; i++){
+  //     num += i;
+  //   }
+  //   console.log(num);
+  // }
+
+  //   console.log(getNumberOfHuman(4)); // 10
+  //   console.log(getNumberOfHuman(10)); // 55
+  //   console.log(getNumberOfHuman(50)); // 1275
+
+
+  //衣替え
+
+  // function isReadyForSummer(s) {
+  //   let str = s;
+  //   let count = 0;  
+
+  //   let strSearch = 'S';  
+
+  //   for (let i = 0; i < str.length; i++) {
+  //     if (str[i] == strSearch) {
+  //       count++;
+  //     }
+  //   }
+
+  //   if (count >= 5 ){
+  //     return 'OK';
+  //   } else {
+  //     return 'NG';
+  //   }
+  // }
+
+  //   console.log(isReadyForSummer("W W W W W S S S S S")); // OK
+  //   console.log(isReadyForSummer("S S W W S W W W W W")); // NG
+  //   console.log(isReadyForSummer("W S S S S S S S S W")); // OK
+
+
+  //お月見だんご
+
+    // function getNumberOfDango(s) { 
+    //   const strArray = s.split(' ');
+    //   const numArray = strArray.map(Number);
+      
+    //   const numbers = numArray.map((x)=> {
+    //     if(x > 5){
+    //       return 5;
+    //     }else {
+    //       return x;
+    //     }
+
+    //   });
+    //   return numbers[0] + numbers[1];
     // }
 
     //   console.log(getNumberOfDango("3 50")); // 8
     //   console.log(getNumberOfDango("100 500")); // 10
     //   console.log(getNumberOfDango("2 4")); // 6
-
-
 
   </script>
 </body>
