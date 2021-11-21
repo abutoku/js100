@@ -12,10 +12,24 @@
 
 //エレベーター
 
-function getElevatorMove() { }
+// function getElevatorMove() { 
+//     const moveStrArray = arguments[0].split(' ');
+//     const moveNumArray = moveStrArray.map(Number);
+//     console.log(moveNumArray);
+//     let count = moveNumArray[0] - 1;
 
-  console.log(getElevatorMove("3 1 4")); // 7
-  console.log(getElevatorMove("17 28 11 62 64 4 7 17")); // 170
+//     for(let i = 1;i < moveNumArray.length;i++){
+//         if (moveNumArray[i] > moveNumArray[i-1]){
+//           count += moveNumArray[i] - moveNumArray[i-1];
+//         } else {
+//           count += moveNumArray[i-1] - moveNumArray[i];
+//         }
+//     }
+//     return count;
+//   }
+
+//   console.log(getElevatorMove("3 1 4")); // 7
+//   console.log(getElevatorMove("17 28 11 62 64 4 7 17")); // 170
 
 
 
