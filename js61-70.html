@@ -9,50 +9,77 @@
 <body>
   <script>
 
+
+//エレベーター
+
+function getElevatorMove() { }
+
+  console.log(getElevatorMove("3 1 4")); // 7
+  console.log(getElevatorMove("17 28 11 62 64 4 7 17")); // 170
+
+
+
+//コーヒー割引キャンペーン
+
+  // function getCostForFreeCoffee() {
+  //   const costStrArray = arguments[0].split(' ');
+  //   const costNumArray = costStrArray.map(Number);
+
+  //   let price = costNumArray[0];
+  //   let discount = costNumArray[1] / 100;
+  //   let sum = 0;
+
+  //   while (price > 0) {
+  //     sum += price;
+  //     price = Math.floor(price * (1 - discount));
+  //   }
+  //   return sum;
+  // }
+
+  // console.log(getCostForFreeCoffee("300 50")); // 596
+  // console.log(getCostForFreeCoffee("1000 99")); // 1010
+
+
   //アニメの日時
 
-  function formatHour() {
-    const strArray = arguments[0].split(' ');
+  // function formatHour() {
+  //   const strArray = arguments[0].split(' ');
 
-    const dayStrArray = strArray[0].split('/');
-    const dayNumArray = dayStrArray.map(Number);
+  //   const dayStrArray = strArray[0].split('/');
+  //   const dayNumArray = dayStrArray.map(Number);
 
     
-    const timeStrArray = strArray[1].split(':');
+  //   const timeStrArray = strArray[1].split(':');
+  //   const timeNumArray = timeStrArray.map(Number);
     
-    const timeNumArray = timeStrArray.map(Number);
     
-    
-    if (timeNumArray[0] > 23){
-      let day = timeNumArray[0] / 24;
-      dayNumArray[1] += Math.floor(day);
-      timeNumArray[0] -= 24 * Math.floor(day);
-      console.log(timeNumArray);
+  //   if (timeNumArray[0] > 23){
+  //     let day = timeNumArray[0] / 24;
+  //     dayNumArray[1] += Math.floor(day);
+  //     timeNumArray[0] -= 24 * Math.floor(day);
+  //   }
 
-      let days = dayNumArray.map(String);
-      let days2 = days.map((x) => {
-        return x.padStart(2, '0');
-      });
-      const dayoutputArray = days2.join('/');
+  //     let days = dayNumArray.map(String);
+  //     let days2 = days.map((x) => {
+  //       return x.padStart(2, '0');
+  //     });
+
+  //     const dayoutputArray = days2.join('/');
       
-
-      let times = timeNumArray.map(String);
-      let times2 = times.map((x) => {
-        return x.padStart(2, '0');
-      });
-      const timeoutputArray = times2.join(':');
+  //     let times = timeNumArray.map(String);
+  //     let times2 = times.map((x) => {
+  //       return x.padStart(2, '0');
+  //     });
+  //     const timeoutputArray = times2.join(':');
       
-      return `${dayoutputArray} ${timeoutputArray}`
+  //     return `${dayoutputArray} ${timeoutputArray}`
+    
+  // }
 
-    }
-  
-  
-  }
-
-    console.log(formatHour("01/27 24:30")); // 01/28 00:30
-    console.log(formatHour("02/31 73:59")); // 02/34 01:59
-    console.log(formatHour("12/31 00:00")); // 12/31 00:00
-    console.log(formatHour("12/31 25:01")); // 12/32 01:01
+  //   console.log(formatHour("01/27 24:30")); // 01/28 00:30
+  //   console.log(formatHour("02/31 73:59")); // 02/34 01:59
+  //   console.log(formatHour("12/31 00:00")); // 12/31 00:00
+  //   console.log(formatHour("12/31 25:01")); // 12/32 01:01
 
 
     //先生の宿題
