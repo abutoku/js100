@@ -8,6 +8,110 @@
 </head>
   <script>
 
+
+    //禁止ワード
+
+    // function hasNgWord(s) { 
+    //   const strArray = s.split(' ');
+    //   console.log(strArray);
+
+    //   if(strArray[1].includes(strArray[0])){
+    //     return 'NG';
+    //   } else {
+    //     return strArray[1];
+    //   }
+
+    // }
+
+    //   console.log(hasNgWord("ngword thisisngword")); // NG
+    //   console.log(hasNgWord("ngword gsprogramming")); // gsprogramming
+
+
+    //門松の作成
+
+    // function getAllLength(n) {
+    //   const shortlength = n / 3;
+    //   return n + shortlength * 5 + shortlength * 7;
+    // }
+
+    //   console.log(getAllLength(60)); // 300
+    //   console.log(getAllLength(9)); // 45
+
+
+    //下一桁はいくつ
+
+    // function getLastNumber(s) {
+    //   const strArray = s.split(' ');
+    //   const numArray = strArray.map(Number);
+      
+    //   let sum = 0;
+    //   for(let i = 0;i < numArray.length;i++) {
+    //     sum += numArray[i];
+    //   }
+    //   num = sum.toString();
+    //   return num.substr(-1, 1);
+    // }
+
+    //   console.log(getLastNumber("1 9 8 9 12")); // 9
+    //   console.log(getLastNumber("1 1 1 1 6")); // 0
+
+
+    //花見の準備
+
+    // function judgeCheapSheet(s) { 
+    //   const sheetArray = s.split(',');
+    //   const sheetArray2 = sheetArray.map((x) => {
+    //     return x.split(' ');
+    //   });
+      
+    //   let num1 = sheetArray2[0];
+    //   let num2 = sheetArray2[1];
+
+    //   const x = num1[2] / (num1[0] * num1[1]);
+    //   const y = num2[2] / (num2[0] * num2[1]);
+
+    //   if (x === y) {
+    //     return 'DREW';
+    //   } else if ( x > y){
+    //     return num2.join(' ');
+    //   } else {
+    //     return num1.join(' ');
+    //   }
+      
+    // }
+
+    //   console.log(judgeCheapSheet("5 18 1000,12 21 3000")); // 5 18 1000
+    //   console.log(judgeCheapSheet("5 5 1800,5 10 3600")); // DRAW
+
+
+    //ゾロ目の日付
+
+    // function isSingleNumber(s) {
+    //   const dayArray = s.split('');
+
+    //     if(dayArray[4]){
+
+    //       if(dayArray[0] === dayArray[1] && dayArray[1] === dayArray[3] && dayArray[3] === dayArray[4]) {
+    //         return 'Yes';
+    //       } else {
+    //         return 'no';
+    //       }
+
+    //     } else {
+    //       if (dayArray[0] === dayArray[1] && dayArray[1] === dayArray[3]) {
+    //         return 'Yes';
+    //       } else {
+    //         return 'no';
+    //       }
+    //     }
+
+    // }
+
+    //   console.log(isSingleNumber("11 1")); // Yes
+    //   console.log(isSingleNumber("11 11")); // Yes
+    //   console.log(isSingleNumber("12 11")); //  No
+
+
   </script>  
 </body>
 </html>
