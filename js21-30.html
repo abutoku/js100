@@ -23,16 +23,17 @@
 
   //アットマーク
 
-  // function convertAtToAtMark(s) {
-  //   let str = s.replaceAll('at', "@"); 
-  //   return str; 
-  // }
+//   function convertAtToAtMark(s) {
+//     let str = s.replaceAll('at', "@"); 
+//     return str; 
+//   }
+// //replaceAllはマッチしたすべての文字列を置き換えた新しい文字列返す
 
-  // console.log(convertAtToAtMark("gsatcodeatquantity")); // gs@code@quantity
-  // console.log(convertAtToAtMark("atatatjojoatatat")); // @@@jojo@@@
+//   console.log(convertAtToAtMark("gsatcodeatquantity")); // gs@code@quantity
+//   console.log(convertAtToAtMark("atatatjojoatatat")); // @@@jojo@@@
 
 
-  //日付のデータ
+  // 日付のデータ
 
   // function formatYMD(s) {
   //   const dateArray = s.split(' ');
@@ -40,13 +41,15 @@
 
   //   for(let i = 0; i < dateArray.length;i++){
   //     if(i === 0){
-  //       formatdate.push(dateArray[i].padStart(4, '0'));
+  //       formatdate.push(dateArray[i].padStart(4, '0'));//頭に0をつけて四桁にする
   //     } else {
-  //       formatdate.push(dateArray[i].padStart(2, '0'));
+  //       formatdate.push(dateArray[i].padStart(2, '0'));//頭に0をつけて二桁にする
   //     }
   //   }
-  //   return formatdate.join('/');
+  //   return formatdate.join('/'); //配列を/で区切って繋げる
   // }
+
+  // //padStart() メソッドは、結果の文字列が指定した長さになるように、現在の文字列を他の文字列で延長します。延長は、現在の文字列の先頭から適用されます。
 
   //   console.log(formatYMD("2021 1 1")); // 2021/01/01
   //   console.log(formatYMD("2020 10 10")); // 2020/10/10
@@ -63,10 +66,11 @@
   //   }
   // }
 
+  // //21は「どれにしようかな」の文字数
   // console.log(choiceOfGod(4)); // 1
   // console.log(choiceOfGod(3)); // 3
 
-  //頭文字
+  // 頭文字
   
   // function getInitialFromName(s) { 
   //   let nameArry = s.split(/\s/);
@@ -75,6 +79,7 @@
 
   //   let fiN = firstName.charAt(0);
   //   let faN = familyName.charAt(0);
+  //   //charAt メソッドは、対象の文字列の指定したインデックスが示す位置にある文字を取得
 
   //   return `${fiN}.${faN}`;
   // }

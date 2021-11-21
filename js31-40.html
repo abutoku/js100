@@ -14,8 +14,10 @@
   // function getAutumn(s) { 
   //   const str = s;
 
-  //   if (str.endsWith('noaki')){
-  //     return str.slice(0, -5);
+  //   if (str.endsWith('noaki')){ 
+  //     //endsWith()引数で指定された文字列で終わるかを判定して true か false を返す
+  //     return str.slice(0, -5); 
+  //     //slice 元の文字列を変更せず、文字列の一部分を取り出し、それを新しい文字列として返す
   //   } else {
   //     return str;
   //   }
@@ -30,13 +32,13 @@
   //台風の間隔
 
 // function getInterval(s) {
-//   const strArray = s.split(' ');
-//   const numArray = strArray.map(Number);
+//   const strArray = s.split(' ');//文字列を半角スペースで区切って配列にする
+//   const numArray = strArray.map(Number);//配列の文字列を数値に変更
 //   const dayArray = [];
 //   for(let i = 0; i < numArray.length - 1 ; i++){
 //     dayArray.push(numArray[i+1] - numArray[i]);
 //   }
-//   return dayArray.join(' ');
+//   return dayArray.join(' '); //半角スペースで区切って繋げる
 // }
 
 // console.log(getInterval("5 8 19 25 31")); // 3 11 6 6
@@ -46,9 +48,8 @@
     //不思議なタマゴ
 
     // function getNumberOfSteps(s) { 
-    //   const strArray = s.split(' ');
-    //   const numArray = strArray.map(Number);     
-    //   return Math.max(...numArray); 
+    //   const numArray = s.split(' '); 
+    //   return Math.max(...numArray); //最大値を返す
     // }
 
     //   console.log(getNumberOfSteps("1 2 5")); // 5
@@ -186,34 +187,34 @@
     //   console.log(daysOfGoOut("99 99 99 99 99 99 99")); // 0
 
 
-  //試合の回数
-    // function calculateNumberOfGames(n) { 
-    //   return n * (n - 1) / 2;
-    // }
+  // 試合の回数
+  //   function calculateNumberOfGames(n) { 
+  //     return n * (n - 1) / 2;
+  //   }
 
-    //   console.log(calculateNumberOfGames(4)); // 6
-    //   console.log(calculateNumberOfGames(10)); // 45
+  //     console.log(calculateNumberOfGames(4)); // 6
+  //     console.log(calculateNumberOfGames(10)); // 45
 
 
-  //本棚選び
+  // 本棚選び
 
-    // function canStoreBooks(s) { 
-    //   const numArray = s.split(' ');
-    //   let n = numArray[0];
-    //   let d = numArray[1];
-    //   let e = numArray[2];
+  //   function canStoreBooks(s) { 
+  //     const numArray = s.split(' '); //半角スペースで分けて配列にする
+  //     let n = numArray[0];
+  //     let d = numArray[1];
+  //     let e = numArray[2];
 
-    //   let i = d * e;
-    //   if (n > i ){
-    //     return 'NG';
-    //   } else {
-    //     return 'OK';
-    //   }
+  //     let i = d * e;
+  //     if (n > i ){
+  //       return 'NG';
+  //     } else {
+  //       return 'OK';
+  //     }
       
-    // }
+  //   }
 
-    //   console.log(canStoreBooks("400 5 85")); // OK
-    //   console.log(canStoreBooks("500 4 70")); // NG
+  //     console.log(canStoreBooks("400 5 85")); // OK
+  //     console.log(canStoreBooks("500 4 70")); // NG
 
   </script>  
 </body>
