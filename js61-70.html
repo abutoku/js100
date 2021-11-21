@@ -16,7 +16,7 @@
 //     const moveStrArray = arguments[0].split(' ');
 //     const moveNumArray = moveStrArray.map(Number);
 //     console.log(moveNumArray);
-//     let count = moveNumArray[0] - 1;
+//     let count = moveNumArray[0] - 1; //一回から最初の階まで移動した距離を代入
 
 //     for(let i = 1;i < moveNumArray.length;i++){
 //         if (moveNumArray[i] > moveNumArray[i-1]){
@@ -39,9 +39,9 @@
   //   const costStrArray = arguments[0].split(' ');
   //   const costNumArray = costStrArray.map(Number);
 
-  //   let price = costNumArray[0];
-  //   let discount = costNumArray[1] / 100;
-  //   let sum = 0;
+  //   let price = costNumArray[0]; //支払う金額
+  //   let discount = costNumArray[1] / 100; //割引率
+  //   let sum = 0; //支払った金額の合計を足していく変数
 
   //   while (price > 0) {
   //     sum += price;
@@ -235,6 +235,19 @@
   //   console.log(convertLeet("GSACADEMY")); // 654C4D3MY
 
 
+  //Leet 文字列(他のコード)
+
+  // function convertLeet(s) {
+  //     const alphabet = ['A', 'E', 'G', 'I', 'O', 'S', 'Z'];
+  //     const leet = [4, 3, 6, 1, 0, 5, 2];
+
+  //     for (let i = 0; i < alphabet.length; i++) {
+  //       s = s.replaceAll(alphabet[i], leet[i], 'g');
+  //     }
+  //     return s;
+  //   }
+
+
   //3 倍返し？
 
   // function deathWhiteDay(n) {
@@ -255,8 +268,7 @@
 
   // function placeCount(s) { 
   //   const moveArray = s.split(' ');
-  //   const move = moveArray.map(Number);
-  //   return move[0] - move[1];
+  //   return moveArray[0] - moveArray[1];
   // }
 
   //   console.log(placeCount("3 4")); // -1
