@@ -96,13 +96,26 @@
   // console.log(getStartTimeForCook("20:00", 20)); // 19:40
   // console.log(getStartTimeForCook("20:30", 80)); // 19:10
 
+  //調理計画（別のコード）
+
+  // function getStartTimeForCook(s, t) {
+  //     const time = s.split(':');
+  //     time[0] = Number(time[0]) - Math.ceil(t / 60);
+  //     time[1] = Number(time[1]) + 60 - t % 60;
+  //     if (time[1] > 60) {
+  //       time[0]++;
+  //       time[1] -= 60;
+  //     }
+  //     return time.join(':');
+  //   }
+
 
 
 
 //ガチャ期待値計算
 
   // function probabilityGetSSR(n, t) {
-  //   let probability = n/100;
+  //   let probability = n/100; // %から変換
   //   let count = t;
 
   //   //「1 － (1 － 当選確率) ^ 回数」
@@ -207,6 +220,18 @@
   //   console.log(isReadyForSummer("W W W W W S S S S S")); // OK
   //   console.log(isReadyForSummer("S S W W S W W W W W")); // NG
   //   console.log(isReadyForSummer("W S S S S S S S S W")); // OK
+
+
+  ////衣替え (他のコード)
+
+  // function isReadyForSummer(s) {
+  //     const seasons = s.split(' ');
+  //     if (seasons.filter(x => x === 'S').length >= seasons.filter(x => x === 'W').length) {
+  //       return 'OK';
+  //     } else {
+  //       return 'NG';
+  //     }
+  //   }
 
 
   //お月見だんご
