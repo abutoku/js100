@@ -8,6 +8,148 @@
 </head>
   <script>
 
+  // //フィボナッチ数列
+
+  // function getFibonacciNth() {
+  //   const n = arguments[0];
+
+  //   if(n === 0 ){
+  //     return 0;
+  //   } else if (n === 1){
+  //     return 1;
+  //   } else {
+  //     let a = 1;
+  //     let b = 1;
+  //       for (let i = 3; i <= n; i++) {
+  //         let c = BigInt(a)+ BigInt(b);
+  //         a = BigInt(b);
+  //         b = BigInt(c);
+  //       }
+  //       return  String(BigInt(b));
+  //     }    
+  // }
+  
+  //   console.log(getFibonacciNth(1)); // 1
+  //   console.log(getFibonacciNth(5)); // 5
+  //   console.log(getFibonacciNth(10)); // 55
+  //   console.log(getFibonacciNth(90)); // 2880067194370816120
+
+
+  // //メールアドレス認証
+
+  // function isValidEmail() { 
+  //   const mail = arguments[0];
+  //   const leng = (mail.match(/@/g) || []).length;
+    
+  //   if(mail.indexOf('@') === 0) {
+  //     return 'false';
+  //     } else if (mail.includes(' ')) {
+  //       return 'false';
+  //       } else if (leng > 1) {
+  //         return 'false';
+  //       } else {
+  //         const str = mail.split('@');
+  //         if(str[1].includes('.')) {
+  //           return 'true' ;
+  //         } else {
+  //           return 'false';
+  //         }
+  //       }
+        
+  //     }
+
+
+  //   console.log(isValidEmail("ccc@aaa.com")); // true
+  //   console.log(isValidEmail("c@cc@aaa.com")); // false
+  //   console.log(isValidEmail("cc c@aaa.com")); // false
+  //   console.log(isValidEmail("cc.c@aaacom")); // false
+  //   console.log(isValidEmail("cc.c@aaa.com")); // true
+  //   console.log(isValidEmail("@aaa.com")); // false
+
+
+  //ログのフィルター
+
+  // function filterLogByKeyword() { 
+  //   const strArray = arguments[0];
+  //   const strArray2 = strArray.split(' ');
+  //   const str = strArray2[0].split(',');
+  //   const keyword = str[0];
+
+  //   const word = [];
+  //   const answer = [];
+
+  //   word.push(str[1]);
+  //   for(let i = 1 ; i < strArray2.length; i++){
+  //     word.push(strArray2[i]);
+  //   }
+    
+  //   word.forEach((x) => {
+  //     if(x.includes(keyword)){
+  //       answer.push(x);
+  //     }
+  //   })
+    
+  //   if (answer.length === 0) {
+  //     return 'None';
+  //   } else {     
+  //     return answer.join(' ');
+  //   }
+
+  // }
+
+  //   console.log(
+  //     filterLogByKeyword("gs,gsacademytokyo javascript gsacademyfukuoka gsbase")
+  //   ); // gsacademytokyo gsacademyfukuoka gsbase
+  //   console.log(
+  //     filterLogByKeyword("script,javascript typescript googleappscript java")
+  //   ); // javascript typescript googleappscript
+  //   console.log(
+  //     filterLogByKeyword(
+  //       "dio,Giorno Bucciarati Abbacchio Mista Narancia Fugo Trish"
+  //     )
+  //   ); // None
+
+
+
+    //カード並べ
+
+    // function getBestScore(s) { 
+
+    //   function compareFunc(a, b) {
+    //     return b - a;
+    //   }
+    //   const numberArray = s.split(' ');
+    //   numberArray.sort(compareFunc);
+
+    //   const num1 = numberArray[0] + numberArray[2];
+    //   const num2 = numberArray[1] + numberArray[3];
+    //   return Number(num1) + Number(num2);
+      
+    // }
+    //   console.log(getBestScore("2 9 3 8")); // 175
+    //   console.log(getBestScore("7 8 7 7")); // 164
+
+
+    //洗濯物と砂ぼこり
+
+    // function canDry(s) {
+    //   const tempArray = s.split(' ');
+      
+    //   if (tempArray[0] >= 25 && tempArray[1] <= 40) {
+    //     return 'No';
+    //   } else if (tempArray[0] >= 25 || tempArray[1] <= 40) {
+    //     return 'Yes';
+    //   } else {
+    //     return 'No';
+    //   }
+
+    // }
+
+    //   console.log(canDry("25 50")); // Yes
+    //   console.log(canDry("10 20")); // Yes
+    //   console.log(canDry("20 50")); // No
+
+
 
     //禁止ワード
 

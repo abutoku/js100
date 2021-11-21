@@ -13,12 +13,12 @@
 //一週間の予定
 
   // function getPaidHolidays(s) { 
-  //   const weekArray = s.split(/\s/);
-  //   const NoArray = weekArray.filter((x) =>{
-  //     return x === 'no';
+  //   const weekArray = s.split(/\s/); //スペースで区切る
+  //   const NoArray = weekArray.filter((x) =>{ 
+  //     return x === 'no'; //値が'no'のものだけxに入れる
   //   })
 
-  //   return NoArray.length;
+  //   return NoArray.length; //配列の長さを返す
   // }
   // console.log(getPaidHolidays("yes yes yes yes no no yes")); // 2
   // console.log(getPaidHolidays("yes no no no no no yes")); // 5
@@ -28,7 +28,7 @@
 //数字の出力
 
   // function zeroPadding3(n) { 
-  //   var ret = ('000' + n).slice(-3);
+  //   var ret = ('000' + n).slice(-3); // 頭に文字列000をつけて末尾3文字を取得
   //   return ret;
   // }
 
@@ -64,8 +64,8 @@
   // let count = 0;  // 文字数を格納
   // let strSearch = 'A';  // 探す文字
 
-  //   for (var i = 0; i < str.length; i++) {
-  //     if (str[i] == strSearch) {
+  //   for (var i = 0; i < str.length; i++) { //繰り返し処理で一致する文字を探す
+  //     if (str[i] == strSearch) { //文字列のインデックス番号と比較
   //       count++;
   //     }
   //   }
@@ -108,12 +108,12 @@
 
   // function getMaxAndMin(s) {
 
-  //   let firstArry = s.split(/\s/); //sをスペースで区切る
+  //   let firstArry = s.split(/\s/); //sをスペースで区切る、(' ')でも良い
   //   let num_firstArry = firstArry.map(function (str) { //数値化
   //     return Number(str);
   //   });
-  //   let max_val = Math.max(...num_firstArry);
-  //   let min_val = Math.min(...num_firstArry); 
+  //   let max_val = Math.max(...num_firstArry); //配列の中の最大値
+  //   let min_val = Math.min(...num_firstArry); //配列の中の最小値
 
   //   return (`${max_val} ${min_val}`);
     
@@ -127,13 +127,12 @@
 //N 文字目まで出力
 
   // function getOneToN(s, n) {
-  //   return s.substr(0, n);
+  //   return s.substr(0, n);  //substr(開始,N文字目)、指定した位置から後方向に指定した文字数だけ返す
   // }
 
   // console.log(getOneToN("aabbccdd", 5)); // aabbc
   // console.log(getOneToN("gsacademyfukuoka", 9)); // gsacademy
   
-
 
 //カウントダウン
 
@@ -143,7 +142,7 @@
   //     numbers.push(n);
   //     n--;
   //   }
-  //   return (numbers.join(' '));
+  //   return (numbers.join(' ')); //半角スペースで区切って出力
   // }
 
   // console.log(countDown(3)); // 3 2 1

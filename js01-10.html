@@ -12,13 +12,13 @@
 //等差数列
 
   // function createSequence(m, n) { 
-  //   const num = [m];
-  //   let x = m;
+  //   const num = [m];//一番最初の文字を配列に入れておく
+  //   let x = m; //足していくための変数を準備
   //   for(let i =0; i < 9; i++) {
-  //     x += n;
-  //     num.push(x);
+  //     x += n; //繰り返し処理でnを足していく
+  //     num.push(x); //配列に入れる
   //   }
-  //   return (num.join(' '));
+  //   return (num.join(' '));//配列を半角スペースで区切ってつなげる
   // }
 
   // console.log(createSequence(3, 3)); // 3 6 9 12 15 18 21 24 27 30
@@ -34,7 +34,8 @@
   //     num.push(n * i);
   //   }
 
-  //   return(num.join(' '));
+  //   return(num.join(' '));//配列を半角スペースで区切ってつなげる
+  //    // joinは、連結した文字列を新たに作成して返す
   // }
 
   //   console.log(createList(2)); // 2 4 6 8 10 12 14 16 18
@@ -44,7 +45,7 @@
   //小文字を大文字に
 
   // function convertToUppercase(s) { 
-  //   return s.toUpperCase();
+  //   return s.toUpperCase(); //toUpperCase()は、文字列の値をを大文字に変換
   // }
 
   // console.log(convertToUppercase("gsacademy")); // GSACADEMY
@@ -54,32 +55,33 @@
 //割り算
 
   // function getQuotientAndSurplus(m, n) { 
-  //   const a = Math.floor(m / n);
-  //   const b = Math.floor(m % n);
-  //   console.log(`${a} ${b}`)
+  //   const a = Math.floor(m / n); //商
+  //   const b = Math.floor(m % n); //余り
+  //   console.log(`${a} ${b}`) //半角スペースで返す
   // }
 
   // console.log(getQuotientAndSurplus(10, 3)); // 3 1
   // console.log(getQuotientAndSurplus(12, 14)); // 0 12
 
 
-//絶対値
+// 絶対値
 
-  // function getAbs(n) {
-  //   return Math.abs(n);
-  // }
+//   function getAbs(n) {
+//     return Math.abs(n);//Math.abs()は、数値の絶対値を返す
+//   }
 
-  // console.log(getAbs(-10)); // 10
-  // console.log(getAbs(15)); // 15
-  // console.log(getAbs(0)); // 0
+//   console.log(getAbs(-10)); // 10
+//   console.log(getAbs(15)); // 15
+//   console.log(getAbs(0)); // 0
 
-//何番目？
-  // function judgeTh(c) { 
-  //   const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   
-  //   return str.indexOf(c)+1;
-  // }
-  // console.log(judgeTh("C")); // 3
-  // console.log(judgeTh("X")); // 24
+// 何番目？
+
+//   function judgeTh(c) { 
+//     const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";   //変数strを定義
+//     return str.indexOf(c)+1; //引数のインデックス番号を取得し1を足して返す
+//   }
+//   console.log(judgeTh("C")); // 3
+//   console.log(judgeTh("X")); // 24
 
 
 //西暦の計算
@@ -92,10 +94,10 @@
   // console.log(calculateYears(1999, 2000)); // 1
   // console.log(calculateYears(794, 1192)); // 398
 
-  //奇数か偶数か
+  // 奇数か偶数か
 
   // function oddOrEven(n) { 
-  //   if(n % 2 === 0){
+  //   if(n % 2 === 0){ //2で割り切れる場合は偶数
   //     return "even"
   //   }else {
   //     return "odd"
@@ -110,13 +112,13 @@
 //単位の計算
 
   // function convertToMm(n,s) {
-  //   if(s === 'km') {
+  //   if(s === 'km') { //単位がkmの場合
   //     return n * 1000000;
-  //   } else if ( s === "m") {
+  //   } else if ( s === "m") { //単位がmの場合
   //     return n * 1000;
-  //   }else if ( s === "cm"){
+  //   }else if ( s === "cm"){ //単位がcmの場合
   //     return n * 10;
-  //   }else {
+  //   }else { //単位がmmの場合
   //     return n;
   //   }
   // }
@@ -126,15 +128,15 @@
   // console.log(convertToMm(2, 'cm'));    // 20
 
 
-  //数の比較
+  // 数の比較
 
   // function compareNumbers(a, b) { 
-  //   if ( a === b ){
+  //   if ( a === b ){ //aとbが同じなら
   //     return 'eq';
-  //   } else if (a > b) {
-  //     return a;
+  //   } else if (a > b) { //aの方が大きければ
+  //     return a; //aを返す
   //   }else {
-  //     return b;
+  //     return b; //bの方が大きければbを返す
   //   }
   // }
   //   console.log(compareNumbers(2, 5)); // 5
